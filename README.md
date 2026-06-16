@@ -74,3 +74,7 @@ Edit `templates/flashcard.html` and `templates/styles.css`. The renderer screens
 the page at a fixed width of 576px (matching standard 80mm thermal paper) and a
 variable height, so layouts should grow vertically rather than relying on a fixed
 viewport.
+
+## To go further
+
+I have created an n8n automation that takes a pdf, creates flashcards out of it and prints them using this script. A lot can be done with this.
