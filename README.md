@@ -1,4 +1,4 @@
-# printer-flashcards
+# Flashcard Printer
 
 A small Flask API that turns question/answer flashcards into printed receipts on a
 thermal (ESC/POS) printer. Each flashcard is rendered as styled HTML, converted to
