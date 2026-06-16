@@ -1,0 +1,136 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main flashcard container - width fixed, height flexible */
+.flashcard {
+    width: 576px;
+    min-height: 576px;
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+}
+
+/* Header section */
+.header {
+    color: black;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    padding: 12px 0;
+    flex-shrink: 0;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Content sections */
+.section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Question section - fixed proportion */
+.question-section {
+    flex: 0 0 auto;
+    min-height: 200px;
+}
+
+/* Answer section - flexible to accommodate all text */
+.answer-section {
+    flex: 1 1 auto;
+    min-height: 200px;
+}
+
+.section-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.4;
+    color: #000;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding: 10px;
+}
+
+/* Question content - centered vertically */
+.question-content {
+    font-weight: 600;
+    align-items: center;
+}
+
+/* Answer content - starts from top, expands as needed */
+.answer-content {
+    font-weight: normal;
+    align-items: center;
+    min-height: auto;
+}
+
+/* Divider between question and answer */
+.divider {
+    height: 2px;
+    background-color: #000;
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+/* Footer decoration */
+.footer {
+    padding: 8px 20px;
+    flex-shrink: 0;
+}
+
+.footer-line {
+    height: 2px;
+    background-color: #000;
+}
+
+/* Responsive text sizing for different content lengths */
+.content.long-text {
+    font-size: 14px;
+}
+
+.content.very-long-text {
+    font-size: 12px;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .flashcard {
+        page-break-after: always;
+    }
+}
