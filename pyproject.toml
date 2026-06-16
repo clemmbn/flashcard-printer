@@ -1,5 +1,5 @@
 [project]
-name = "printer-flashcards"
+name = "flashcard-printer"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

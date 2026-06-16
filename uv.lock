@@ -355,7 +355,7 @@ wheels = [
 ]
 
 [[package]]
-name = "printer-flashcards"
+name = "flashcard-printer"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
